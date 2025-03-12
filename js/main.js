@@ -89,5 +89,5 @@ search.addEventListener("submit", async(e)=>{
      feelslike_c.textContent = `Feels like ${response.current.feelslike_c}°`
      maxtemp_c.textContent = `Day ${response.forecast[0].day.maxtemp_c} °`
      mintemp_c.textContent = `Night ${response.forecast[0].day.mintemp_c} °`
-     e.preventDefault();d
+     e.preventDefault();
 })
