@@ -1,5 +1,5 @@
 const KEY = "9520624784d14709817195746240910";
-const url = new URL("http://api.weatherapi.com/v1")
+const url = new URL("https://api.weatherapi.com/v1")
 url.searchParams.set("key", KEY)
 
 export const searchWeather = async ({location, enpoint, method})=>{
