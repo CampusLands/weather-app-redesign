@@ -72,8 +72,11 @@ search.addEventListener("submit", async(e)=>{
      alert("dfgh");
      const data = Object.fromEntries(new FormData(e.target));
      const url = new URL(e.target.action);
+     console.log(url);
      data.enpoint = url.pathname;   
      data.method = e.target.method;   
+     console.log(data);
+     
      const response = await searchWeather(data);
      if(response.status == 400){ return undefined};
      console.log(response);
